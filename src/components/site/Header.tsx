@@ -29,7 +29,7 @@ export function Header() {
         <a href="/" className="flex items-center gap-2 group">
           <span className="pulse-dot" aria-hidden />
           <span className="font-display font-extrabold tracking-[0.18em] text-sm text-foreground">
-            SOUND<span className="text-ignition">·</span>MASTER
+            APEX<span className="text-ignition">·</span>AUTO<span className="text-ignition">·</span>SOUND
           </span>
         </a>
 
@@ -47,8 +47,8 @@ export function Header() {
         </nav>
 
         <div className="hidden lg:flex items-center gap-3">
-          <a href="tel:+14709947502" className="label-mono hover:text-foreground transition-colors">
-            (470) 994-7502
+          <a href="tel:+15550142087" className="label-mono hover:text-foreground transition-colors">
+            (555) 014-2087
           </a>
           <a
             href="/#contact-form"
@@ -92,11 +92,11 @@ export function Header() {
               Talk About Your Build
             </a>
             <a
-              href="tel:+14709947502"
+              href="tel:+15550142087"
               className="flex items-center justify-center gap-2 h-11 border border-border font-mono text-[11px] tracking-[0.18em] uppercase text-muted-foreground hover:text-foreground hover:border-border/80 transition"
             >
               <span className="text-ignition">↗</span>
-              Call Now · (470) 994-7502
+              Call Now · (555) 014-2087
             </a>
           </div>
         </div>

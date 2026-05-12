@@ -1,6 +1,5 @@
 import { MapPin, Phone, Clock } from "lucide-react";
 import installImg from "@/assets/install-bay.jpg";
-import storeFrontImg from "@/assets/ogimages/SM Store Front.webp";
 
 const SERVICES = [
   "Custom Car Audio",
@@ -39,73 +38,62 @@ export function FinalCTA() {
           </p>
         </div>
 
-        {/* Google Map */}
         <div className="mb-8 lg:mb-10">
           <div className="flex items-center gap-3 mb-4">
             <span className="h-px w-10 bg-ignition" />
-            <span className="label-mono-ignition">Find Us · Roswell, GA</span>
+            <span className="label-mono-ignition">Visit the Studio</span>
           </div>
-          <div className="panel panel-line overflow-hidden">
-            <iframe
-              src="https://www.google.com/maps?q=Sound+Master,+11230+Alpharetta+Hwy,+Suite+118,+Roswell,+GA+30076&output=embed"
-              width="100%"
-              height="360"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Sound Master Roswell location map"
-              className="w-full h-[300px] lg:h-[360px] block"
-            />
-          </div>
-          <div className="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-sm text-muted-foreground font-mono">
-            <a
-              href="https://maps.google.com/?q=11230+Alpharetta+Hwy+Suite+118+Roswell+GA+30076"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-ignition transition"
-            >
-              11230 Alpharetta Hwy, Suite 118, Roswell, GA 30076
-            </a>
-            <a href="tel:+14709947502" className="hover:text-ignition transition">
-              (470) 994-7502
-            </a>
+          <div className="panel panel-line overflow-hidden p-6 lg:p-8 grid md:grid-cols-[1.2fr_0.8fr] gap-6 items-center bg-surface-2/80">
+            <div>
+              <div className="label-mono-ignition">Apex Auto Sound</div>
+              <h3 className="mt-3 font-display font-bold uppercase tracking-wide text-xl lg:text-2xl">
+                Demo consultation studio
+              </h3>
+              <p className="mt-3 text-sm text-muted-foreground leading-relaxed max-w-xl">
+                A dark, premium contact block replaces location embeds for this sanitized
+                portfolio demo. The details below are fictional and safe for public display.
+              </p>
+            </div>
+            <div className="space-y-2 text-sm font-mono text-muted-foreground">
+              <div>1200 Innovation Drive, Suite 100</div>
+              <div>Atlanta, GA 30301</div>
+              <a href="tel:+15550142087" className="block text-foreground hover:text-ignition transition">
+                (555) 014-2087
+              </a>
+            </div>
           </div>
         </div>
 
         <div className="grid lg:grid-cols-12 gap-6 lg:gap-8 items-start">
-          {/* Store info */}
           <aside className="lg:col-span-4 panel panel-line overflow-hidden backdrop-blur bg-surface-2/80">
-            {/* Store front photo */}
             <div className="relative h-40 overflow-hidden">
               <img
-                src={storeFrontImg}
-                alt="Sound Master storefront in Roswell, GA"
+                src={installImg}
+                alt="Premium automotive studio interior"
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-surface-2/90 via-transparent to-transparent" />
               <div className="absolute bottom-3 left-4">
                 <span className="font-mono text-[10px] tracking-[0.22em] uppercase text-muted-foreground/80">
-                  Our Roswell Shop
+                  Demo Studio
                 </span>
               </div>
             </div>
             <div className="p-6 lg:p-7">
-            <div className="label-mono-ignition">Sound Master · Roswell, GA</div>
+            <div className="label-mono-ignition">Apex Auto Sound · Demo</div>
             <div className="mt-5 space-y-4">
               <Row
                 icon={MapPin}
                 label="Address"
-                value="11230 Alpharetta Hwy, Suite 118"
-                valueLine2="Roswell, GA 30076"
-                href="https://maps.google.com/?q=11230+Alpharetta+Hwy+Suite+118+Roswell+GA+30076"
+                value="1200 Innovation Drive, Suite 100"
+                valueLine2="Atlanta, GA 30301"
               />
               <Row
                 icon={Phone}
                 label="Phone"
-                value="(470) 994-7502"
-                href="tel:+14709947502"
+                value="(555) 014-2087"
+                href="tel:+15550142087"
               />
               <Row
                 icon={Clock}
@@ -118,9 +106,6 @@ export function FinalCTA() {
             </div>
           </aside>
 
-          {/* Contact form — powered by FormSubmit */}
-          {/* TODO: Replace the FormSubmit action URL below with the verified Sound Master business email before launch. */}
-          {/* Example: action="https://formsubmit.co/info@soundmasterroswell.com" */}
           <form
             id="contact-form"
             action="https://formsubmit.co/preview-test@easinilabs.com"
@@ -129,14 +114,14 @@ export function FinalCTA() {
           >
             {/* FormSubmit config */}
             <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_subject" value="New inquiry from SoundMasterRoswell.com" />
+            <input type="hidden" name="_subject" value="New inquiry from Apex Auto Sound demo" />
             <input type="text" name="_honey" className="hidden" aria-hidden="true" />
 
             <div className="label-mono-ignition mb-6">Send a Message</div>
 
             <div className="grid sm:grid-cols-2 gap-4">
               <FormField label="Full Name" name="name" placeholder="Your name" required />
-              <FormField label="Phone" name="phone" type="tel" placeholder="(470) 000-0000" />
+              <FormField label="Phone" name="phone" type="tel" placeholder="(555) 000-0000" />
               <FormField label="Email" name="email" type="email" placeholder="you@email.com" required />
               <FormField label="Vehicle" name="vehicle" placeholder="Year · Make · Model" />
             </div>
@@ -173,8 +158,8 @@ export function FinalCTA() {
               </button>
               <p className="mt-3 text-xs text-muted-foreground/70 font-mono">
                 Or call us directly at{" "}
-                <a href="tel:+14709947502" className="text-foreground hover:text-ignition transition">
-                  (470) 994-7502
+                <a href="tel:+15550142087" className="text-foreground hover:text-ignition transition">
+                  (555) 014-2087
                 </a>
               </p>
             </div>

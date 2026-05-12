@@ -17,30 +17,25 @@ export function Footer() {
           <div className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-ignition" />
             <span className="font-display font-extrabold tracking-[0.18em] text-sm">
-              SOUND<span className="text-ignition">·</span>MASTER
+              APEX<span className="text-ignition">·</span>AUTO<span className="text-ignition">·</span>SOUND
             </span>
           </div>
           <p className="mt-4 text-sm text-muted-foreground max-w-xs leading-relaxed">
             Premium automotive audio, integration, and vehicle customization.
-            Serving Roswell and metro Atlanta since 2013.
+            Portfolio demo concept by easini LABS.
           </p>
           <div className="mt-5 space-y-1.5">
             <a
-              href="tel:+14709947502"
+              href="tel:+15550142087"
               className="block text-sm text-muted-foreground hover:text-ignition transition font-mono"
             >
-              (470) 994-7502
+              (555) 014-2087
             </a>
-            <a
-              href="https://maps.google.com/?q=11230+Alpharetta+Hwy+Suite+118+Roswell+GA+30076"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block text-xs text-muted-foreground/70 hover:text-muted-foreground transition"
-            >
-              11230 Alpharetta Hwy, Suite 118 · Roswell, GA 30076
-            </a>
+            <div className="block text-xs text-muted-foreground/70">
+              1200 Innovation Drive, Suite 100 · Atlanta, GA 30301
+            </div>
           </div>
-          <div className="mt-6 label-mono">© 2026 Sound Master · Roswell, GA</div>
+          <div className="mt-6 label-mono">© 2026 Apex Auto Sound · Portfolio Demo</div>
         </div>
 
         {/* Right — compact nav */}
@@ -64,7 +59,7 @@ export function Footer() {
 
       <div className="border-t border-border">
         <div className="mx-auto max-w-[1320px] px-5 lg:px-10 py-5 flex flex-wrap items-center justify-between gap-3">
-          <div className="label-mono">Engineered with precision · Roswell · GA</div>
+          <div className="label-mono">Portfolio demo concept by easini LABS</div>
           <a
             href="https://easinilabs.com"
             target="_blank"

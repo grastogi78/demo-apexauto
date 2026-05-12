@@ -1,39 +1,37 @@
-import jeepOutsideStore from "@/assets/ogimages/Jeep outside store.webp";
-import decalOnJeep from "@/assets/ogimages/SoundMaster Decal on Jeep.webp";
+import installBayImg from "@/assets/install-bay.jpg";
+import tuningLabImg from "@/assets/tuning-lab.jpg";
 
 const PROOF_CARDS = [
-  { label: "Roswell Since 2013", detail: "Over a decade serving North Atlanta drivers" },
-  { label: "Clean Wiring", detail: "No hacked harnesses, no shortcuts, no comebacks" },
+  { label: "Studio Concept", detail: "A fictional brand system for portfolio demonstration" },
+  { label: "Clean Wiring", detail: "No hacked harnesses, no shortcuts, no loose ends" },
   { label: "OEM-Grade Fitment", detail: "Installs that look and feel factory" },
-  { label: "Built Around You", detail: "Every system is designed for your vehicle and goals" },
+  { label: "Built Around You", detail: "Every system is designed for the vehicle and driver" },
 ];
 
-export function BuiltInRoswell() {
+export function DriverDetails() {
   return (
     <section className="py-20 lg:py-28 border-t border-border">
       <div className="mx-auto max-w-[1320px] px-5 lg:px-10">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-start">
 
-          {/* Content */}
           <div className="lg:col-span-6 lg:pt-2">
             <div className="flex items-center gap-3">
               <span className="h-px w-10 bg-ignition" />
-              <span className="label-mono-ignition">Roswell, GA · Est. 2013</span>
+              <span className="label-mono-ignition">Detail-Led Integration</span>
             </div>
 
             <h2 className="display-h2 mt-5">
-              Built in Roswell.<br />
-              <span className="text-ignition">Built Right.</span>
+              Built for drivers who<br />
+              <span className="text-ignition">notice the details.</span>
             </h2>
 
             <p className="mt-6 text-muted-foreground text-sm lg:text-base leading-relaxed">
-              For more than a decade, Sound Master has helped Roswell and North Atlanta
-              drivers upgrade the way their vehicles sound, feel, and function.
+              Apex Auto Sound is a fictional premium studio concept for custom vehicle
+              audio, lighting, security, and integration work.
             </p>
             <p className="mt-4 text-muted-foreground text-sm lg:text-base leading-relaxed">
-              Every build starts with the vehicle, the driver, and the goal. No hacked
-              wiring. No destructive installs. No shortcuts. Just clean integration,
-              careful fitment, and systems built like they belong there.
+              Every build starts with the vehicle, the driver, and the goal. The result
+              is clean integration, careful fitment, and systems built like they belong there.
             </p>
 
             <div className="mt-10 grid grid-cols-2 gap-px bg-border">
@@ -58,36 +56,33 @@ export function BuiltInRoswell() {
             </a>
           </div>
 
-          {/* Imagery */}
           <div className="lg:col-span-6 space-y-3">
-            {/* Main photo — Jeep outside the store */}
             <div className="panel panel-line overflow-hidden relative aspect-[4/3]">
               <img
-                src={jeepOutsideStore}
-                alt="Jeep parked outside Sound Master in Roswell, GA"
+                src={installBayImg}
+                alt="Premium vehicle installation bay"
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4">
                 <span className="font-mono text-[10px] tracking-[0.22em] uppercase bg-background/70 backdrop-blur px-2 py-1 border border-border text-muted-foreground">
-                  Sound Master · Roswell, GA
+                  Premium Studio Workflow
                 </span>
               </div>
             </div>
 
-            {/* Secondary photo — decal */}
             <div className="panel panel-line overflow-hidden relative aspect-[16/7]">
               <img
-                src={decalOnJeep}
-                alt="Sound Master decal on a Jeep build"
+                src={tuningLabImg}
+                alt="Audio tuning and vehicle integration workspace"
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-background/50 via-transparent to-transparent" />
               <div className="absolute bottom-3 left-4">
                 <span className="font-mono text-[10px] tracking-[0.22em] uppercase bg-background/75 backdrop-blur-sm px-2 py-1 border border-border text-muted-foreground">
-                  Trusted by Roswell, Alpharetta &amp; North Atlanta drivers
+                  Portfolio demo concept by easini LABS
                 </span>
               </div>
             </div>

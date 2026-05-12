@@ -1,7 +1,7 @@
 import { SectionHeader } from "./Services";
 import enclosureImg from "@/assets/enclosure-build.jpg";
-import jeepLightBuildImg from "@/assets/ogimages/jeeplightbuild.jpg";
-import carplayInstallImg from "@/assets/ogimages/carplay.jpg";
+import carplayInstallImg from "@/assets/carplay-dash.jpg";
+import jeepLightingImg from "@/assets/jeep-night.jpg";
 
 type RecentBuild = {
   label: string;
@@ -19,7 +19,7 @@ const RECENT: RecentBuild[] = [
     tags: ["DASH INTEGRATION", "OEM+ FIT"],
     desc: "A clean touchscreen retrofit with factory controls, climate layout, and daily usability preserved.",
     image: carplayInstallImg,
-    alt: "Sony CarPlay stereo integrated cleanly into a factory dash",
+    alt: "Premium touchscreen integration inside a vehicle dash",
   },
   {
     label: "Fabrication",
@@ -31,9 +31,9 @@ const RECENT: RecentBuild[] = [
     label: "Multi-System",
     name: "Jeep Wrangler Lighting",
     tags: ["RIGID LIGHTING", "SHOP BUILD"],
-    desc: "Auxiliary lighting mounted with a tight fit, clean routing, and a finished look outside the Sound Master bay.",
-    image: jeepLightBuildImg,
-    alt: "Jeep Wrangler lighting build with Rigid auxiliary lights at Sound Master",
+    desc: "Auxiliary lighting planned with clean routing, weatherproof connections, and a finished visual profile.",
+    image: jeepLightingImg,
+    alt: "Cinematic Jeep lighting build",
   },
 ];
 
@@ -44,7 +44,7 @@ export function Builds() {
         <SectionHeader
           eyebrow="Custom Builds"
           title="Recent builds"
-          right="A selection of installations completed at our Roswell facility."
+          right="A fictional selection of premium vehicle integration concepts."
         />
 
         <div className="mt-12 grid lg:grid-cols-12 gap-3">

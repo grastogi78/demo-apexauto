@@ -2,17 +2,16 @@ import { SectionHeader } from "./Services";
 import enclosureImg from "@/assets/enclosure-build.jpg";
 import jeepImg from "@/assets/jeep-night.jpg";
 import carplayImg from "@/assets/carplay-dash.jpg";
-import stereoImg from "@/assets/ogimages/Stereo.webp";
-import amplifierRackImg from "@/assets/ogimages/amplifier rack.jpg";
-import rearCameraImg from "@/assets/ogimages/rearcamera.jpg";
+import speakerImg from "@/assets/speaker-closeup.jpg";
+import truckImg from "@/assets/truck-amp.jpg";
 
 const SHOTS = [
   { src: enclosureImg, label: "Custom Enclosure", tag: "TRUNK BUILD" },
-  { src: amplifierRackImg, label: "Amplifier Rack", tag: "CLEAN WIRING" },
+  { src: speakerImg, label: "Door Components", tag: "ACOUSTIC" },
   { src: jeepImg, label: "Jeep Wrangler", tag: "AMBIENT LED" },
-  { src: stereoImg, label: "Head Unit Install", tag: "INTEGRATION" },
+  { src: truckImg, label: "Amplifier Layout", tag: "POWER" },
   { src: carplayImg, label: "CarPlay Retrofit", tag: "CARPLAY" },
-  { src: rearCameraImg, label: "Camera Integration", tag: "DETAIL WORK" },
+  { src: enclosureImg, label: "Fabrication Detail", tag: "DETAIL WORK" },
 ];
 
 export function Gallery() {
@@ -22,7 +21,7 @@ export function Gallery() {
         <SectionHeader
           eyebrow="Gallery"
           title="Craftsmanship in detail"
-          right="A closer look at recent installations from the Sound Master floor."
+          right="A cinematic look at premium installation and integration details."
         />
 
         <div className="mt-12 grid grid-cols-12 gap-3 auto-rows-[160px] lg:auto-rows-[200px]">

@@ -4,7 +4,7 @@ const ITEMS = [
   {
     icon: Award,
     k: "Over a Decade",
-    v: "Serving Roswell and metro Atlanta since 2013",
+    v: "Fictional studio concept for premium vehicle builds",
   },
   {
     icon: Wrench,

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Header } from "@/components/site/Header";
 import { Hero } from "@/components/site/Hero";
 import { Trust } from "@/components/site/Trust";
-import { BuiltInRoswell } from "@/components/site/BuiltInRoswell";
+import { DriverDetails } from "@/components/site/DriverDetails";
 import { Services } from "@/components/site/Services";
 import { Process } from "@/components/site/Process";
 import { Builds } from "@/components/site/Builds";
@@ -38,7 +38,7 @@ function App() {
       <Header />
       <Hero />
       <Trust />
-      <BuiltInRoswell />
+      <DriverDetails />
       <Services />
       <Process />
       <Builds />

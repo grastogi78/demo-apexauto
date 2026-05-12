@@ -24,7 +24,7 @@ export function Hero() {
         <div className="lg:col-span-7">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 border border-border bg-surface-2/70 backdrop-blur-sm">
             <ShieldCheck className="w-3.5 h-3.5 text-ignition" />
-            <span className="label-mono">Trusted Since 2013 · Roswell, GA</span>
+            <span className="label-mono">Portfolio Demo Concept by easini LABS</span>
           </div>
 
           <h1 className="display-h1 mt-6">
@@ -34,8 +34,8 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-base lg:text-lg text-muted-foreground leading-relaxed">
-            Custom audio, lighting, security, and vehicle integration systems
-            designed with precision and installed like they belong there.
+            Premium custom audio, lighting, security, and vehicle integration systems
+            built for enthusiasts and daily drivers.
           </p>
 
           <div className="mt-9 flex flex-wrap gap-3">
@@ -55,8 +55,8 @@ export function Hero() {
           </div>
 
           <div className="mt-12 grid grid-cols-3 max-w-md gap-6">
-            <Stat value="12+" label="Years in Roswell" />
-            <Stat value="5,000+" label="Builds Completed" />
+            <Stat value="Concept" label="Portfolio Demo" />
+            <Stat value="5,000+" label="Sample Builds" />
             <Stat value="OEM" label="Grade Finish" />
           </div>
         </div>
