@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import ConceptBanner from "@/components/site/ConceptBanner";
 import { Header } from "@/components/site/Header";
 import { Hero } from "@/components/site/Hero";
 import { Trust } from "@/components/site/Trust";
@@ -52,7 +53,10 @@ function App() {
 
   return (
     <>
-      {page}
+      <ConceptBanner />
+      <div style={{ paddingTop: '30px' }}>
+        {page}
+      </div>
       <ScrollToTop />
     </>
   );
